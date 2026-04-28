@@ -37,7 +37,8 @@ function CareersPage() {
         </div>
       </Section>
 
-      <Section id="apply" eyebrow="Apply" title="Online Application" center className="bg-secondary/40">
+      <div id="apply" />
+      <Section eyebrow="Apply" title="Online Application" center className="bg-secondary/40">
         <form onSubmit={(e) => { e.preventDefault(); alert("Application received — thank you."); }} className="max-w-2xl mx-auto bg-card rounded-2xl p-7 border border-border shadow-soft grid gap-4">
           <Field label="Full name"><input required className={inputCls} /></Field>
           <div className="grid sm:grid-cols-2 gap-4">
