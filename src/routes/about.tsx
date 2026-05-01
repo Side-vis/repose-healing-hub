@@ -37,34 +37,10 @@ const purpose = "To restore lives, strengthen communities, and create pathways t
 
 const team = [
   {
-    name: "Daniel Obote",
-    title: "CEO & Counseling Psychologist",
-    image: danielObote,
-    bio: "Daniel Obote is a Counseling Psychologist and the CEO of Repose Healing Center, dedicated to helping individuals overcome addiction, trauma, and emotional challenges. He brings strong experience in trauma-informed counseling, creating a safe space where clients feel understood, respected, and supported throughout the healing process.\n\nHis approach is person-centered, recognizing that every individual has unique experiences, strengths, and goals. He also uses Cognitive Behavioral Therapy (CBT) to help clients understand unhealthy thought patterns, develop healthier coping skills, and make lasting positive changes.\n\nWith a compassionate and professional style, Daniel is committed to guiding individuals toward healing, resilience, personal growth, and long-term recovery.",
-  },
-  {
-    name: "Shallon Natukunda",
-    title: "Counsellor, Psychotherapist & Psychosocial Skills Trainer",
-    image: sharonNatukunda,
-    bio: "Shallon Natukunda is a highly trained professional Counsellor, Psychotherapist, and Psychosocial Skills Trainer with profound experience in supporting individuals through emotional, mental health, and recovery challenges. She is dedicated to helping clients build resilience, confidence, and healthier ways of coping with life's difficulties.\n\nHer therapeutic approach includes Cognitive Behavioral Therapy (CBT) and Person-Centred Therapy, allowing her to provide practical tools for change while creating a warm, supportive, and non-judgmental space for healing and personal growth.",
-  },
-  {
-    name: "Dr. Abdulrahim Shirazi",
-    title: "Retired Medical Doctor & Recovery Coach",
-    image: drAbdulrahimShirazi,
-    bio: "Dr. Abdulrahim Shirazi is a retired Medical Doctor with a lifelong commitment to healing and service. After retiring from active medical practice in 2016, he trained with SAPTA Kenya as a Recovery Coach. He now brings both his medical expertise and recovery coaching experience to support individuals on their journey to healing at Repose Healing Center.",
-  },
-  {
     name: "Nassanga Violet",
     title: "Psychiatric Clinical Officer",
     image: violetNassanga,
     bio: "Nassanga Violet is a dedicated Psychiatric Clinical Officer committed to supporting individuals on their journey to recovery from substance use and mental health challenges. She provides compassionate, professional, and patient-centered care in a safe and supportive environment. Her goal is to help individuals achieve healing, emotional stability, resilience, and lasting recovery.",
-  },
-  {
-    name: "Bruno Kirabo",
-    title: "Recovery Coach",
-    image: brunoKirabo,
-    bio: "Bruno Kirabo is a dedicated Recovery Coach with a deep passion for walking alongside brothers and sisters on their journey to healing. He believes recovery goes beyond sobriety—it is about rediscovering purpose, rebuilding confidence, and creating a life to be proud of.\n\nHis approach is compassionate, non-judgmental, and action-focused. In his sessions, he supports individuals with goal setting, emotional resilience, rebuilding self-esteem, and developing practical steps toward lasting recovery and personal growth.",
   },
   {
     name: "Abaine Cleophus",
@@ -73,11 +49,36 @@ const team = [
     bio: "Abaine Cleophus is a compassionate Mental Health Nurse dedicated to supporting individuals on their recovery journey, especially those facing substance use and emotional challenges. He provides holistic, patient-centered care in a safe and supportive environment that encourages growth and positive change. His goal is to promote healing, resilience, and long-term recovery.",
   },
   {
+    name: "Shallon Natukunda",
+    title: "Counsellor, Psychotherapist & Psychosocial Skills Trainer",
+    image: sharonNatukunda,
+    bio: "Shallon Natukunda is a highly trained professional Counsellor, Psychotherapist, and Psychosocial Skills Trainer with profound experience in supporting individuals through emotional, mental health, and recovery challenges. She is dedicated to helping clients build resilience, confidence, and healthier ways of coping with life's difficulties.\n\nHer therapeutic approach includes Cognitive Behavioral Therapy (CBT) and Person-Centred Therapy, allowing her to provide practical tools for change while creating a warm, supportive, and non-judgmental space for healing and personal growth.",
+  },
+  {
     name: "Nabateregga Prossy",
     title: "Professional Counsellor",
     image: musawoProssy,
     bio: "Nabateregga Prossy is a professional Counsellor dedicated to supporting individuals on their journey to recovery and emotional healing. She understands that addiction is often a silent response to inner struggles that have not yet been voiced.\n\nHer approach focuses on creating a safe, supportive, and non-judgmental environment where clients can openly explore their hidden challenges. She believes that being truly heard is the first step toward healing, rebuilding hope, and reclaiming one's life.",
   },
+    {
+    name: "Bruno Kirabo",
+    title: "Recovery Coach",
+    image: brunoKirabo,
+    bio: "Bruno Kirabo is a dedicated Recovery Coach with a deep passion for walking alongside brothers and sisters on their journey to healing. He believes recovery goes beyond sobriety—it is about rediscovering purpose, rebuilding confidence, and creating a life to be proud of.\n\nHis approach is compassionate, non-judgmental, and action-focused. In his sessions, he supports individuals with goal setting, emotional resilience, rebuilding self-esteem, and developing practical steps toward lasting recovery and personal growth.",
+  },
+  {
+    name: "Dr. Abdulrahim Shirazi",
+    title: "Retired Medical Doctor & Recovery Coach",
+    image: drAbdulrahimShirazi,
+    bio: "Dr. Abdulrahim Shirazi is a retired Medical Doctor with a lifelong commitment to healing and service. After retiring from active medical practice in 2016, he trained with SAPTA Kenya as a Recovery Coach. He now brings both his medical expertise and recovery coaching experience to support individuals on their journey to healing at Repose Healing Center.",
+  },
+  {
+    name: "Daniel Obote",
+    title: "CEO & Counseling Psychologist",
+    image: danielObote,
+    bio: "Daniel Obote is a Counseling Psychologist and the CEO of Repose Healing Center, dedicated to helping individuals overcome addiction, trauma, and emotional challenges. He brings strong experience in trauma-informed counseling, creating a safe space where clients feel understood, respected, and supported throughout the healing process.\n\nHis approach is person-centered, recognizing that every individual has unique experiences, strengths, and goals. He also uses Cognitive Behavioral Therapy (CBT) to help clients understand unhealthy thought patterns, develop healthier coping skills, and make lasting positive changes.\n\nWith a compassionate and professional style, Daniel is committed to guiding individuals toward healing, resilience, personal growth, and long-term recovery.",
+  },
+
 ];
 
 function AboutPage() {
@@ -172,11 +173,11 @@ function AboutPage() {
               </span>
             </div>
             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-primary mb-4 leading-tight">
-              Our Directors & Clinical Team
+              Our team
             </h2>
             <div className="w-20 h-1 bg-accent/60 rounded-full mx-auto my-4" />
             <p className="text-muted-foreground text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
-              Meet the dedicated clinicians and support staff who provide compassionate, professional care.
+              Meet both our clinical and psychotherapy team dedicated in service to our clients.
             </p>
           </div>
 
