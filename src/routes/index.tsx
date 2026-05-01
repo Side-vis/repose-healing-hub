@@ -4,12 +4,12 @@ import { Section } from "@/components/site/Section";
 import { site, waLink } from "@/lib/site";
 import hero from "@/assets/hero.jpg";
 import counseling from "@/assets/counseling.jpg";
-import facility from "@/assets/facility.jpg";
+import facility from "@/assets/repose1.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Repose Healing Center — Restoring Hope Again | Entebbe, Uganda" },
+      { title: "Repose Healing Center — Advocacy. Prevention. Care. Restoring Lives. | Entebbe, Uganda" },
       { name: "description", content: "Confidential addiction recovery, mental health care, counseling and inpatient rehab in Entebbe. Small-capacity, evidence-based treatment for lasting wellness." },
     ],
   }),
@@ -44,7 +44,7 @@ function HomePage() {
         <div className="relative container mx-auto px-4 py-28 md:py-40 text-primary-foreground">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.25em] bg-white/15 backdrop-blur px-4 py-1.5 rounded-full">
-              <span className="size-1.5 rounded-full bg-white animate-pulse" /> Restoring Hope Again
+              <span className="size-1.5 rounded-full bg-white animate-pulse" /> {site.tagline}
             </div>
             <h1 className="mt-6 font-display text-4xl md:text-6xl leading-[1.05]">
               Reclaim Your Life.<br /><span className="italic opacity-95">Restore Hope Again.</span>
@@ -104,7 +104,7 @@ function HomePage() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="relative">
             <img src={facility} alt="Welcoming reception area" className="rounded-3xl shadow-lift w-full" loading="lazy" width={1280} height={960} />
-            <div className="absolute -bottom-6 -right-6 bg-primary text-primary-foreground p-6 rounded-2xl shadow-lift max-w-[220px] hidden md:block">
+            <div className="absolute -bottom-6 -right-6 bg-primary text-primary-foreground p-6 rounded-2xl shadow-lift max-w-55 hidden md:block">
               <div className="text-4xl font-display">10</div>
               <div className="text-sm opacity-90 mt-1">clients at a time — for truly focused, personal care</div>
             </div>
@@ -160,7 +160,7 @@ function HomePage() {
       {/* Map */}
       <Section eyebrow="Find Us" title="Located in peaceful Entebbe" center>
         <div className="grid lg:grid-cols-3 gap-6">
-          <div className="lg:col-span-2 aspect-[16/10] rounded-2xl overflow-hidden border border-border shadow-soft">
+          <div className="lg:col-span-2 aspect-16/10 rounded-2xl overflow-hidden border border-border shadow-soft">
             <iframe title="Map" src={site.maps} className="w-full h-full" loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
           </div>
           <div className="bg-secondary/60 rounded-2xl p-7 border border-border">

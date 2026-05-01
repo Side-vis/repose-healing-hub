@@ -94,10 +94,10 @@ function AdmissionsPage() {
                 <input type="checkbox" required className="mt-1" />
                 <span>I confirm this referral is submitted with consent where required, and I consent to secure, confidential processing of this information (see our Privacy Policy).</span>
               </label>
-              <div className="flex items-center justify-between text-xs bg-secondary/70 rounded-lg p-3">
+              {/* <div className="flex items-center justify-between text-xs bg-secondary/70 rounded-lg p-3">
                 <span className="text-muted-foreground">🔒 Secure form • Anti-spam (CAPTCHA)</span>
                 <span className="text-primary font-medium">I'm not a robot ✓</span>
-              </div>
+              </div> */}
               <button className="rounded-full bg-primary text-primary-foreground py-3 font-medium hover:bg-primary-glow">Submit Referral</button>
             </form>
           </div>

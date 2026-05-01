@@ -1,14 +1,30 @@
 import { Link } from "@tanstack/react-router";
-import { Facebook, Instagram, Twitter, Linkedin, Youtube, Phone, Mail, MapPin } from "lucide-react";
+import { Facebook, Instagram, Phone, Mail, MapPin } from "lucide-react";
 import { site } from "@/lib/site";
+import logo from "@/assets/logo.png";
+
+function TikTokIcon(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" {...props}>
+      <path d="M16.6 5.82c-.48-.55-.77-1.26-.77-2.03h-2.49v10.03a2.1 2.1 0 1 1-1.91-2.09v-2.54a4.6 4.6 0 1 0 4.59 4.6V9.4a7.1 7.1 0 0 0 4.16 1.33V8.24c-1.2 0-2.3-.38-3.18-1.02-.74-.53-1.43-1.2-1.4-1.4Z" />
+    </svg>
+  );
+}
 
 export function Footer() {
   return (
     <footer className="bg-primary text-primary-foreground mt-20">
       <div className="container mx-auto px-4 py-16 grid gap-10 md:grid-cols-2 lg:grid-cols-4">
         <div>
-          <div className="font-display text-2xl">Repose Healing Center</div>
-          <p className="mt-1 italic opacity-80">Restoring Hope Again</p>
+          <div className="flex items-center gap-3">
+            <div className="size-12 rounded-full bg-white/10 overflow-hidden ring-1 ring-white/20 shrink-0">
+              <img src={logo} alt="Repose Healing Center logo" className="size-full object-cover" loading="eager" />
+            </div>
+            <div>
+              <div className="font-display text-2xl leading-none">Repose Healing Center</div>
+              <p className="mt-1 italic opacity-80">{site.tagline}</p>
+            </div>
+          </div>
           <p className="mt-4 text-sm opacity-80 max-w-xs">
             Professional rehabilitation and mental wellness services in Entebbe, Uganda — safe, confidential, evidence-based care.
           </p>
@@ -16,9 +32,7 @@ export function Footer() {
             {[
               { h: site.social.facebook, I: Facebook },
               { h: site.social.instagram, I: Instagram },
-              { h: site.social.twitter, I: Twitter },
-              { h: site.social.linkedin, I: Linkedin },
-              { h: site.social.youtube, I: Youtube },
+              { h: site.social.tiktok, I: TikTokIcon },
             ].map(({ h, I }, i) => (
               <a key={i} href={h} target="_blank" rel="noreferrer" className="size-9 grid place-items-center rounded-full bg-white/10 hover:bg-white/20 transition">
                 <I className="size-4" />

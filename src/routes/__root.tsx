@@ -3,17 +3,18 @@ import appCss from "../styles.css?url";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { WhatsAppFab } from "@/components/site/WhatsAppFab";
+import logo from "@/assets/logo.png";
 
 export const Route = createRootRoute({
   head: () => ({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Repose Healing Center — Rehabilitation & Mental Health, Entebbe Uganda" },
-      { name: "description", content: "Repose Healing Center offers confidential addiction treatment, mental health care, counseling and inpatient rehabilitation in Entebbe, Uganda. Restoring Hope Again." },
+      { title: "Repose Healing Center — Advocacy. Prevention. Care. Restoring Lives." },
+      { name: "description", content: "Repose Healing Center offers confidential addiction treatment, mental health care, counseling and inpatient rehabilitation in Entebbe, Uganda. Advocacy. Prevention. Care. Restoring Lives." },
       { name: "keywords", content: "addiction treatment Entebbe, addiction treatment Kampala, rehabilitation center Uganda, mental health services Entebbe, counseling Uganda, drug rehab Uganda" },
       { name: "author", content: "Repose Healing Center" },
-      { property: "og:title", content: "Repose Healing Center — Restoring Hope Again" },
+      { property: "og:title", content: "Repose Healing Center — Advocacy. Prevention. Care. Restoring Lives." },
       { property: "og:description", content: "Confidential, professional rehabilitation and mental health services in Entebbe, Uganda." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -21,6 +22,8 @@ export const Route = createRootRoute({
     ],
     links: [
       { rel: "stylesheet", href: appCss },
+      { rel: "icon", href: logo, type: "image/png", sizes: "any" },
+      { rel: "apple-touch-icon", href: logo },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&display=swap" },

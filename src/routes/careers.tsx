@@ -48,10 +48,10 @@ function CareersPage() {
           <Field label="Role / Opportunity"><input required className={inputCls} /></Field>
           <Field label="Cover note"><textarea rows={5} className={inputCls} /></Field>
           <Field label="Upload CV (PDF)"><input type="file" accept=".pdf,.doc,.docx" className={inputCls} /></Field>
-          <div className="flex items-center justify-between text-xs bg-secondary/70 rounded-lg p-3">
+          {/* <div className="flex items-center justify-between text-xs bg-secondary/70 rounded-lg p-3">
             <span className="text-muted-foreground">🔒 Secure upload • CAPTCHA protected</span>
             <span className="text-primary font-medium">I'm not a robot ✓</span>
-          </div>
+          </div> */}
           <button className="rounded-full bg-primary text-primary-foreground py-3 font-medium hover:bg-primary-glow">Submit Application</button>
         </form>
       </Section>

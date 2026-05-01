@@ -50,10 +50,10 @@ function ContactPage() {
                 <Field label="Phone"><input required type="tel" className={inputCls} /></Field>
               </div>
               <Field label="Message"><textarea rows={5} required className={inputCls} /></Field>
-              <div className="flex items-center justify-between text-xs bg-background rounded-lg p-3 border border-border">
+              {/* <div className="flex items-center justify-between text-xs bg-background rounded-lg p-3 border border-border">
                 <span className="text-muted-foreground">🔒 SSL-secured • CAPTCHA protected</span>
                 <span className="text-primary font-medium">I'm not a robot ✓</span>
-              </div>
+              </div> */}
               <button className="rounded-full bg-primary text-primary-foreground py-3 font-medium hover:bg-primary-glow">Send Message</button>
             </form>
 
