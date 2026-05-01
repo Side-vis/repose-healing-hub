@@ -55,7 +55,7 @@ export function Header() {
           <div className="hidden md:flex items-center gap-2">
             <Link
               to="/admissions"
-              className="inline-flex items-center rounded-full bg-primary text-primary-foreground px-5 py-2.5 text-sm font-medium hover:bg-primary-glow transition-colors"
+              className="inline-flex items-center rounded-full bg-gold text-gold-foreground px-5 py-2.5 text-sm font-semibold shadow-[0_8px_24px_-8px_oklch(0.78_0.13_88_/_0.5)] hover:brightness-105 transition"
             >
               Book Assessment
             </Link>
