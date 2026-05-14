@@ -98,7 +98,7 @@ function AdmissionsPage() {
                 <span className="text-muted-foreground">🔒 Secure form • Anti-spam (CAPTCHA)</span>
                 <span className="text-primary font-medium">I'm not a robot ✓</span>
               </div> */}
-              <button className="rounded-full bg-primary text-primary-foreground py-3 font-medium hover:bg-primary-glow">Submit Referral</button>
+              <button className="rounded-full bg-primary text-primary-foreground py-3 font-medium hover:bg-primary-glow">Submit</button>
             </form>
           </div>
         </div>

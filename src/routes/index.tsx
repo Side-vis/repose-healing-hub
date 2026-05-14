@@ -30,7 +30,6 @@ const whyUs = [
   "Professional and ethical treatment approach",
   "Safe, welcoming healing environment",
   "Personalized, evidence-based treatment plans",
-  "Small capacity — only 10 clients for focused care",
   "Recovery, reintegration and relapse-prevention focus",
 ];
 
@@ -76,7 +75,7 @@ function HomePage() {
       </section>
 
       {/* Welcome */}
-      <Section eyebrow="Welcome" title="Compassionate care, rooted in evidence" center
+      <Section eyebrow="Welcome" title="Evidenced - based compassionate Care" center
         lead="At Repose Healing Center, we are committed to helping individuals recover from addiction, emotional distress, mental health challenges and behavioral difficulties. Our team provides structured, evidence-based and compassionate care designed to restore stability, wellness, dignity and purpose." />
 
       {/* Services grid */}
@@ -129,14 +128,14 @@ function HomePage() {
       <Section eyebrow="Voices of Recovery" title="Stories of hope" center className="bg-secondary/40">
         <div className="grid md:grid-cols-3 gap-6">
           {[
-            "I arrived broken. I'm leaving with purpose. The counselors met me with patience and dignity every single day.",
-            "As a family, we finally felt seen and heard. The education and support saved our relationships.",
-            "The small community meant I was never just a number. Recovery here feels personal, structured and kind.",
+            {"quote": "I arrived broken. I'm leaving with purpose. The counselors met me with patience and dignity every single day.", "author": "Amina"},
+            {"quote": "As a family, we finally felt seen and heard. The education and support saved our relationships.", "author": "Kirabo"},
+            {"quote": "The small community meant I was never just a number. Recovery here feels personal, structured and kind.", "author": "Innocent"}
           ].map((q, i) => (
             <figure key={i} className="bg-card p-7 rounded-2xl border border-border">
               <div className="text-primary text-4xl font-display leading-none">"</div>
-              <blockquote className="mt-2 text-foreground/90 leading-relaxed">{q}</blockquote>
-              <figcaption className="mt-4 text-sm text-muted-foreground">— Anonymous client</figcaption>
+              <blockquote className="mt-2 text-foreground/90 leading-relaxed">{q.quote}</blockquote>
+              <figcaption className="mt-4 text-sm text-muted-foreground">— {q.author}</figcaption>
             </figure>
           ))}
         </div>

@@ -4,7 +4,12 @@ import { Heart, Shield, Lock, Award, Users, Sparkles, Leaf } from "lucide-react"
 import { useState } from "react";
 import garden from "@/assets/garden.jpg";
 import room from "@/assets/room.jpg";
-import facility from "@/assets/repose1.jpg";
+import facility from "@/assets/facility.jpg";
+import facility2 from "@/assets/facility2.jpg";
+import facility3 from "@/assets/facility3.jpg";
+import facility4 from "@/assets/facility4.jpg";
+import facility5 from "@/assets/facility5.jpg";
+import repose1 from "@/assets/repose1.jpg";
 import hands from "@/assets/hands.jpg";
 import danielObote from "@/assets/Daniel Obote.jpg";
 import sharonNatukunda from "@/assets/Sharon Natukunda.jpg";
@@ -13,6 +18,9 @@ import violetNassanga from "@/assets/VIOLET NASSANGA.jpg";
 import brunoKirabo from "@/assets/Bruno Kirabo.jpg";
 import abaineCleophus from "@/assets/Abaine Cleophus.jpg";
 import musawoProssy from "@/assets/Musawo Prossy.jpg";
+import jonathanErong from "@/assets/Jonathan Erong.jpg";
+import akulloJanetMartha from "@/assets/Akullo Janet Martha.jpg";
+import { title } from "process";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -43,10 +51,10 @@ const team = [
     bio: "Nassanga Violet is a dedicated Psychiatric Clinical Officer committed to supporting individuals on their journey to recovery from substance use and mental health challenges. She provides compassionate, professional, and patient-centered care in a safe and supportive environment. Her goal is to help individuals achieve healing, emotional stability, resilience, and lasting recovery.",
   },
   {
-    name: "Abaine Cleophus",
-    title: "Mental Health Nurse",
-    image: abaineCleophus,
-    bio: "Abaine Cleophus is a compassionate Mental Health Nurse dedicated to supporting individuals on their recovery journey, especially those facing substance use and emotional challenges. He provides holistic, patient-centered care in a safe and supportive environment that encourages growth and positive change. His goal is to promote healing, resilience, and long-term recovery.",
+    name: "Jonathan Erong",
+    title: "Psychiatric Nurse",
+    image: jonathanErong,
+    bio: "Jonathan Erong is a compassionate and experienced Psychiatric Nurse dedicated to supporting individuals on their journey to mental wellness and recovery. He has experience in mental health care, psychosocial support, patient rehabilitation, and counselling, with a strong passion for helping people affected by mental health and substance use challenges. Jonathan is committed to providing professional, respectful, and person-centred care that promotes healing, stability, and hope within individuals, families, and communities.",
   },
   {
     name: "Shallon Natukunda",
@@ -71,6 +79,12 @@ const team = [
     title: "Retired Medical Doctor & Recovery Coach",
     image: drAbdulrahimShirazi,
     bio: "Dr. Abdulrahim Shirazi is a retired Medical Doctor with a lifelong commitment to healing and service. After retiring from active medical practice in 2016, he trained with SAPTA Kenya as a Recovery Coach. He now brings both his medical expertise and recovery coaching experience to support individuals on their journey to healing at Repose Healing Center.",
+  },
+  {
+    name: "Akullo Janet Martha",
+    title: "Clinical Psychologist",
+    image: akulloJanetMartha,
+    bio: "A Clinical Psychologist with extensive experience in mental health care, counselling, and rehabilitation services. She is a Child and Adolescent Mental Health Specialist, Psychiatric Clinical Officer, trainer, and lecturer with over 20 years of experience supporting individuals, families, and communities affected by mental health and substance use challenges. Martha is passionate about holistic healing, trauma recovery, and empowering people towards healthier and more meaningful lives through compassionate and professional care"
   },
   {
     name: "Daniel Obote",
@@ -314,7 +328,7 @@ function AboutPage() {
 
       <Section eyebrow="Facility" title="A peaceful healing environment" center className="bg-secondary/40">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-          {[garden, room, facility, hands].map((src, i) => (
+          {[facility, facility2, facility3, repose1, facility4, facility5].map((src, i) => (
             <img key={i} src={src} alt={`Facility view ${i + 1}`} className="rounded-2xl aspect-square object-cover w-full shadow-soft" loading="lazy" />
           ))}
         </div>
