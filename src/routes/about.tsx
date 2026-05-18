@@ -20,6 +20,7 @@ import abaineCleophus from "@/assets/Abaine Cleophus.jpg";
 import musawoProssy from "@/assets/Musawo Prossy.jpg";
 import jonathanErong from "@/assets/Jonathan Erong.jpg";
 import akulloJanetMartha from "@/assets/Akullo Janet Martha.jpg";
+import judethaddeusJasu from "@/assets/Jude Thaddeus Jasu.jpg";
 import { title } from "process";
 
 export const Route = createFileRoute("/about")({
@@ -50,12 +51,18 @@ const team = [
     image: violetNassanga,
     bio: "Nassanga Violet is a dedicated Psychiatric Clinical Officer committed to supporting individuals on their journey to recovery from substance use and mental health challenges. She provides compassionate, professional, and patient-centered care in a safe and supportive environment. Her goal is to help individuals achieve healing, emotional stability, resilience, and lasting recovery.",
   },
+  // {
+  //   name: "Jonathan Erong",
+  //   title: "Psychiatric Nurse",
+  //   image: jonathanErong,
+  //   bio: "Jonathan Erong is a compassionate and experienced Psychiatric Nurse dedicated to supporting individuals on their journey to mental wellness and recovery. He has experience in mental health care, psychosocial support, patient rehabilitation, and counselling, with a strong passion for helping people affected by mental health and substance use challenges. Jonathan is committed to providing professional, respectful, and person-centred care that promotes healing, stability, and hope within individuals, families, and communities.",
+  // },
   {
-    name: "Jonathan Erong",
+    name: "Abaine Cleophus",
     title: "Psychiatric Nurse",
-    image: jonathanErong,
-    bio: "Jonathan Erong is a compassionate and experienced Psychiatric Nurse dedicated to supporting individuals on their journey to mental wellness and recovery. He has experience in mental health care, psychosocial support, patient rehabilitation, and counselling, with a strong passion for helping people affected by mental health and substance use challenges. Jonathan is committed to providing professional, respectful, and person-centred care that promotes healing, stability, and hope within individuals, families, and communities.",
-  },
+    image: abaineCleophus,
+    bio: "Abaine Cleophus is a compassionate Mental Health Nurse dedicated to supporting individuals on their recovery journey, especially those facing substance use and emotional challenges. He provides holistic, patient-centered care in a safe and supportive environment that encourages growth and positive change. His goal is to promote healing, resilience, and long-term recovery."
+   },
   {
     name: "Shallon Natukunda",
     title: "Counsellor, Psychotherapist & Psychosocial Skills Trainer",
@@ -85,6 +92,12 @@ const team = [
     title: "Clinical Psychologist",
     image: akulloJanetMartha,
     bio: "A Clinical Psychologist with extensive experience in mental health care, counselling, and rehabilitation services. She is a Child and Adolescent Mental Health Specialist, Psychiatric Clinical Officer, trainer, and lecturer with over 20 years of experience supporting individuals, families, and communities affected by mental health and substance use challenges. Martha is passionate about holistic healing, trauma recovery, and empowering people towards healthier and more meaningful lives through compassionate and professional care"
+  },
+  {
+    name: "Jude Thaddeus Jasu",
+    title: "A mental health and addiction counseling professional",
+    image: judethaddeusJasu,
+    bio: "A mental health and addiction counseling professional passionate about helping individuals and communities navigate the challenges of substance use and mental health. My work focuses on addiction prevention, recovery support, counseling and advocacy, with the goal of creating healthier and more supportive communities.",
   },
   {
     name: "Daniel Obote",
