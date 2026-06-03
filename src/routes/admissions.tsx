@@ -60,11 +60,15 @@ function AdmissionsPage() {
                 <div className="mt-2 font-medium text-primary">Fees Enquiry</div>
                 <div className="text-xs text-muted-foreground">Email us for a confidential fees breakdown</div>
               </a>
-              <a href={`tel:${site.phone}`} className="rounded-2xl border border-border bg-card p-5 hover:shadow-soft">
+              <div className="rounded-2xl border border-border bg-card p-5">
                 <Phone className="size-5 text-primary" />
                 <div className="mt-2 font-medium text-primary">Insurance Enquiry</div>
                 <div className="text-xs text-muted-foreground">Call to discuss insurance and coverage options</div>
-              </a>
+                <div className="mt-3 flex flex-col">
+                  <a href={`tel:${site.phone}`} className="hover:underline">{site.phoneDisplay}</a>
+                  <a href={`tel:${site.phone2}`} className="hover:underline">{site.phone2Display}</a>
+                </div>
+              </div>
             </div>
           </div>
 

@@ -21,6 +21,7 @@ import musawoProssy from "@/assets/Musawo Prossy.jpg";
 import jonathanErong from "@/assets/Jonathan Erong.jpg";
 import akulloJanetMartha from "@/assets/Akullo Janet Martha.jpg";
 import judethaddeusJasu from "@/assets/Jude Thaddeus Jasu.jpg";
+import kyobutungiSylvia from "@/assets/kyobutungiSylvia.jpeg";
 import { title } from "process";
 
 export const Route = createFileRoute("/about")({
@@ -45,6 +46,12 @@ const values = [
 const purpose = "To restore lives, strengthen communities, and create pathways to lasting recovery.";
 
 const team = [
+    {
+    name: "Daniel Obote",
+    title: "CEO & Counseling Psychologist",
+    image: danielObote,
+    bio: "Daniel Obote is a Counseling Psychologist and the CEO of Repose Healing Center, dedicated to helping individuals overcome addiction, trauma, and emotional challenges. He brings strong experience in trauma-informed counseling, creating a safe space where clients feel understood, respected, and supported throughout the healing process.\n\nHis approach is person-centered, recognizing that every individual has unique experiences, strengths, and goals. He also uses Cognitive Behavioral Therapy (CBT) to help clients understand unhealthy thought patterns, develop healthier coping skills, and make lasting positive changes.\n\nWith a compassionate and professional style, Daniel is committed to guiding individuals toward healing, resilience, personal growth, and long-term recovery.",
+  },
   {
     name: "Nassanga Violet",
     title: "Psychiatric Clinical Officer",
@@ -57,11 +64,17 @@ const team = [
   //   image: jonathanErong,
   //   bio: "Jonathan Erong is a compassionate and experienced Psychiatric Nurse dedicated to supporting individuals on their journey to mental wellness and recovery. He has experience in mental health care, psychosocial support, patient rehabilitation, and counselling, with a strong passion for helping people affected by mental health and substance use challenges. Jonathan is committed to providing professional, respectful, and person-centred care that promotes healing, stability, and hope within individuals, families, and communities.",
   // },
-  {
-    name: "Abaine Cleophus",
+  // {
+  //   name: "Abaine Cleophus",
+  //   title: "Psychiatric Nurse",
+  //   image: abaineCleophus,
+  //   bio: "Abaine Cleophus is a compassionate Mental Health Nurse dedicated to supporting individuals on their recovery journey, especially those facing substance use and emotional challenges. He provides holistic, patient-centered care in a safe and supportive environment that encourages growth and positive change. His goal is to promote healing, resilience, and long-term recovery."
+  //  },
+   {
+    name: "Kyobutungi Sylvia",
     title: "Psychiatric Nurse",
-    image: abaineCleophus,
-    bio: "Abaine Cleophus is a compassionate Mental Health Nurse dedicated to supporting individuals on their recovery journey, especially those facing substance use and emotional challenges. He provides holistic, patient-centered care in a safe and supportive environment that encourages growth and positive change. His goal is to promote healing, resilience, and long-term recovery."
+    image: kyobutungiSylvia,
+    bio: "Kyobutungi Sylvia is a compassionate and dedicated Enrolled Psychiatric Nurse with experience in mental health care and psychiatric patient support. She is passionate about helping individuals through recovery by providing empathetic, professional, and holistic psychiatric care."
    },
   {
     name: "Shallon Natukunda",
@@ -98,12 +111,6 @@ const team = [
     title: "A mental health and addiction counseling professional",
     image: judethaddeusJasu,
     bio: "A mental health and addiction counseling professional passionate about helping individuals and communities navigate the challenges of substance use and mental health. My work focuses on addiction prevention, recovery support, counseling and advocacy, with the goal of creating healthier and more supportive communities.",
-  },
-  {
-    name: "Daniel Obote",
-    title: "CEO & Counseling Psychologist",
-    image: danielObote,
-    bio: "Daniel Obote is a Counseling Psychologist and the CEO of Repose Healing Center, dedicated to helping individuals overcome addiction, trauma, and emotional challenges. He brings strong experience in trauma-informed counseling, creating a safe space where clients feel understood, respected, and supported throughout the healing process.\n\nHis approach is person-centered, recognizing that every individual has unique experiences, strengths, and goals. He also uses Cognitive Behavioral Therapy (CBT) to help clients understand unhealthy thought patterns, develop healthier coping skills, and make lasting positive changes.\n\nWith a compassionate and professional style, Daniel is committed to guiding individuals toward healing, resilience, personal growth, and long-term recovery.",
   },
 
 ];

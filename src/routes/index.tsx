@@ -150,6 +150,7 @@ function HomePage() {
           <p className="mt-4 opacity-90 max-w-xl mx-auto">Reach out confidentially. Our team will guide you through the next step, with care.</p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <a href={`tel:${site.phone}`} className="rounded-full bg-white text-primary px-6 py-3 font-medium">Call {site.phoneDisplay}</a>
+            <a href={`tel:${site.phone2}`} className="rounded-full bg-white/90 text-primary px-6 py-3 font-medium">Call {site.phone2Display}</a>
             <a href={waLink()} target="_blank" rel="noreferrer" className="rounded-full border border-white/40 px-6 py-3 font-medium hover:bg-white/10">WhatsApp Us</a>
             <Link to="/admissions" className="rounded-full border border-white/40 px-6 py-3 font-medium hover:bg-white/10">Start Recovery Today</Link>
           </div>
@@ -168,7 +169,13 @@ function HomePage() {
             <p className="mt-2 text-sm text-muted-foreground">{site.address}</p>
             <div className="mt-5 h-px bg-border" />
             <dl className="mt-5 space-y-3 text-sm">
-              <div><dt className="text-muted-foreground">Phone</dt><dd><a href={`tel:${site.phone}`} className="text-primary font-medium">{site.phoneDisplay}</a></dd></div>
+              <div>
+                <dt className="text-muted-foreground">Phone</dt>
+                <dd className="flex flex-col">
+                  <a href={`tel:${site.phone}`} className="text-primary font-medium">{site.phoneDisplay}</a>
+                  <a href={`tel:${site.phone2}`} className="text-primary font-medium">{site.phone2Display}</a>
+                </dd>
+              </div>
               <div><dt className="text-muted-foreground">Email</dt><dd><a href={`mailto:${site.email}`} className="text-primary font-medium break-all">{site.email}</a></dd></div>
               <div><dt className="text-muted-foreground">Office Hours</dt><dd>{site.hours}</dd></div>
             </dl>

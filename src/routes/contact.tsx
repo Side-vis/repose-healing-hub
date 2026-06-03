@@ -22,18 +22,51 @@ function ContactPage() {
         <div className="grid lg:grid-cols-3 gap-6">
           {[
             { I: MapPin, t: "Address", d: site.address },
-            { I: Phone, t: "Phone", d: site.phoneDisplay, href: `tel:${site.phone}` },
+            {
+              I: Phone,
+              t: "Phone",
+              // render two phone numbers inside the card
+              d: (
+                <>
+                  <a href={`tel:${site.phone}`} className="hover:underline block">{site.phoneDisplay}</a>
+                  <a href={`tel:${site.phone2}`} className="hover:underline block">{site.phone2Display}</a>
+                </>
+              ),
+            },
             { I: Mail, t: "Email", d: site.email, href: `mailto:${site.email}` },
             { I: Clock, t: "Office Hours", d: site.hours },
             { I: MessageCircle, t: "WhatsApp", d: "Click-to-chat with our team", href: waLink() },
-            { I: AlertTriangle, t: "Emergency Line", d: `${site.phoneDisplay} • 24/7`, href: `tel:${site.phone}`, emergency: true },
-          ].map((c, i) => (
-            <a key={i} href={c.href ?? "#"} className={`bg-card rounded-2xl p-6 border border-border hover:shadow-soft transition ${c.emergency ? "border-emergency/50" : ""}`}>
-              <c.I className={`size-6 ${c.emergency ? "text-emergency" : "text-primary"}`} />
-              <div className="mt-3 font-display text-lg text-primary">{c.t}</div>
-              <div className="mt-1 text-sm text-muted-foreground break-words">{c.d}</div>
-            </a>
-          ))}
+            {
+              I: AlertTriangle,
+              t: "Emergency Line",
+              d: (
+                <>
+                  <a href={`tel:${site.phone}`} className="hover:underline">{site.phoneDisplay}</a>
+                  <span className="ml-2">• 24/7</span>
+                </>
+              ),
+              href: `tel:${site.phone}`,
+              emergency: true,
+            },
+          ].map((c, i) => {
+            const content = (
+              <>
+                <c.I className={`size-6 ${c.emergency ? "text-emergency" : "text-primary"}`} />
+                <div className="mt-3 font-display text-lg text-primary">{c.t}</div>
+                <div className="mt-1 text-sm text-muted-foreground break-words">{c.d}</div>
+              </>
+            );
+
+            return c.href ? (
+              <a key={i} href={c.href} className={`bg-card rounded-2xl p-6 border border-border hover:shadow-soft transition ${c.emergency ? "border-emergency/50" : ""}`}>
+                {content}
+              </a>
+            ) : (
+              <div key={i} className={`bg-card rounded-2xl p-6 border border-border ${c.emergency ? "border-emergency/50" : ""}`}>
+                {content}
+              </div>
+            );
+          })}
         </div>
       </Section>
 

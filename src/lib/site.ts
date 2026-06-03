@@ -3,10 +3,13 @@ export const site = {
   tagline: "Advocacy. Prevention. Care. Restoring Lives.",
   phone: "+256789728211",
   phoneDisplay: "+256 789 728 211",
+  phone2: "+256703802019",
+  phone2Display: "+256 703 802 019",
   email: "reposehealingcenter@gmail.com",
   address: "Ssese View Road, Plot 2, Manyago, Entebbe, Uganda",
   hours: "Monday – Saturday, 8:00 AM – 6:00 PM",
   whatsapp: "256789728211",
+  whatsapp2: "256703802019",
   maps: "https://www.google.com/maps?q=Manyago,Entebbe,Uganda&output=embed",
   social: {
     facebook: "https://www.facebook.com/ligi.nghopefully26",
